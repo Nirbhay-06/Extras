@@ -60,20 +60,40 @@ public class PatternPrinter {
 
     public static void main(String args[]){
         Scanner read = new Scanner(System.in);
-        System.out.print("Enter the Symbol for pattern: ");
-        char pattern = read.next().charAt(0);
+        
 
-        System.out.print("Enter the number of rows: ");
-        int row = read.nextInt();
+        while(true){
+            System.out.printf("Choose a Pattern\n1. Left Triangel\n2. Left Inverted Triangel\n3. Right Triangle\n4. Right Inverted Triangle\nChoose the Number: ");
+            int option = read.nextInt();
 
-        leftSideTriangle(pattern, row);
-        leftInvertedTriangle(pattern, row);
-        rightTriangle(pattern, row);
-        rightInvertedTriangle(pattern, row);
+            System.out.print("Enter the Symbol for pattern: ");
+            char pattern = read.next().charAt(0);
+
+            System.out.print("Enter the number of rows: ");
+            int row = read.nextInt();
+
+            switch(option){
+                case 1:
+                    leftSideTriangle(pattern, row);
+                    break;
+                case 2:
+                    leftInvertedTriangle(pattern, row);
+                    break;
+                case 3:
+                    rightTriangle(pattern, row);
+                    break;
+                case 4:
+                    rightInvertedTriangle(pattern, row);
+                    break;
+                default:
+                    System.out.println("Invalid option!!!");
+                    read.close();
+                    return;
+            }
+        }
 
 
 
-
-        read.close();
+        
     }
 }
