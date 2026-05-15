@@ -63,8 +63,13 @@ public class PatternPrinter {
         
 
         while(true){
-            System.out.printf("Choose a Pattern\n1. Left Triangel\n2. Left Inverted Triangel\n3. Right Triangle\n4. Right Inverted Triangle\nChoose the Number: ");
+            System.out.printf("Choose a Pattern\n1. Left Triangel\n2. Left Inverted Triangel\n3. Right Triangle\n4. Right Inverted Triangle\n0. Exit\nChoose the Number: ");
             int option = read.nextInt();
+            if(option == 0){
+                System.out.println("Exitiong...");
+                read.close();
+                return;
+            }
 
             System.out.print("Enter the Symbol for pattern: ");
             char pattern = read.next().charAt(0);
@@ -73,6 +78,7 @@ public class PatternPrinter {
             int row = read.nextInt();
 
             switch(option){
+                
                 case 1:
                     leftSideTriangle(pattern, row);
                     break;
@@ -92,8 +98,6 @@ public class PatternPrinter {
             }
         }
 
-
-
-        
+       
     }
 }

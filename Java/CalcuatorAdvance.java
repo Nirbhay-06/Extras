@@ -14,6 +14,7 @@ public class CalcuatorAdvance {
 
             if(operation.equals("=")){
                 System.out.printf("Result = %.2f",result);
+                read.close();
                 return;
             }
             else {
@@ -46,6 +47,7 @@ public class CalcuatorAdvance {
                 
                 else{
                     System.out.println("Invalid Operation!!");
+                    read.close();
                     break;
                 }
             }
