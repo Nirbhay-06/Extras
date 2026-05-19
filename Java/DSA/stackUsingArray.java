@@ -1,18 +1,19 @@
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/*Stack is a  Linear data structure that stores data in a Sequence.
+The Insertion and Deletion is done from one side. Stack follows the FILO(First in Last Out) principle */
 class stackUsingArray{
     private int STK[];
     private int size;
     private int top;
-
+//Constructor to Initlize a Stack.
     public stackUsingArray(int capacity){
         STK = new int[capacity];
         size = capacity;
         top = -1;
     }
-
+//Function to add an element in the Stack
     public void push(int ele){
         if(top == size - 1){
             System.out.println("Stack is overflow!");
@@ -22,7 +23,7 @@ class stackUsingArray{
         STK[top]=ele;
         System.out.printf("Inserted element %d at position %d",ele,top);
     }
-
+//Function to remove element form the Stack.
     public void pop(){
         if(top == -1){
             System.out.println("Stack is Undeflow"); 
@@ -32,7 +33,7 @@ class stackUsingArray{
             top = top - 1;
         }
     }
-
+//functio to display all the elements in the Stack.
     public void display(){
         if(top == -1){
             System.out.println("Stack is Empty");
@@ -44,11 +45,11 @@ class stackUsingArray{
             System.out.println("Null");
         }
     }
-
+//Functio that returns the number of element in the stack.
     public void size(){
         System.out.printf("The number of element in the stack are : %d",top+1);
     }
-
+//Function to searcch for a Specific element in the Stack.
     public void search(int target){
         if(top == -1){
             System.out.println("Stack is Empty");

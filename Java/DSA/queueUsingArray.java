@@ -1,7 +1,8 @@
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-
+/*Queue is a Linear Data Structure that folows the FIFO(First In First Out) Principle.
+    Element is inserted from the rear and removed from the front. */
 public class queueUsingArray {
 
     private int[] Queue;
@@ -14,7 +15,7 @@ public class queueUsingArray {
         front = -1;
         rear = -1;
     }
-
+//Function to insert an element in Queue.
     void insert(int ele){
         if(rear == capacity ){
             System.out.println("Queue is Overflow.");
@@ -27,7 +28,7 @@ public class queueUsingArray {
             front++;
         }
     }
-
+//Function to remove element from the Queue.
     void delete(){
         if(front == -1 | rear == -1){
             System.out.println("Queue is Underflow");
@@ -46,7 +47,7 @@ public class queueUsingArray {
             rear = -2;
         }
     }
-
+//Function to Display all the elements of the Queue.
     void display(){
         if(front == -1 | rear == -1){
             System.out.println("The Queue is Empty!!");
@@ -62,7 +63,7 @@ public class queueUsingArray {
             System.out.println("Null");
         }
     }
-
+//Function to Search for a Specific element in the Queue.
     void search(int target){
         for(int i = front; i<=rear ; i++){
             if(target == Queue[i]){
@@ -72,7 +73,7 @@ public class queueUsingArray {
         }
         System.out.println("Element not found.");
     }
-
+//Function to check if the Queue is Empty or not.
     void isEmpty(){
         if(front == -1 | rear == -1){
             System.out.println("The Queue is Empty!!");
