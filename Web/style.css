@@ -1,7 +1,8 @@
 body{
-    color: beige;
+    color: rgb(187, 187, 187);
     accent-color: auto;
     background-image: url(Images/download\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: bisque;
 }
