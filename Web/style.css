@@ -1,3 +1,7 @@
-h2{
-    color: rgb(237, 0, 0);
+body{
+    color: beige;
+    accent-color: auto;
+    background-image: url(Images/download\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
