@@ -20,7 +20,16 @@ Experiment with new technologies
 Track my progress over time
 🛠️ Technologies Used
 <p align="left"> <img src="https://skillicons.dev/icons?i=java,c,html,css,git,github,vscode" /> </p>
-<h1>HEllo</h1>
+<ul>
+  <li>C</li>
+  <li>Java</li>
+  <li>Pyhon</li>
+  <li>Web</li><ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+</ul>
 ✨ Topics Covered
 ☕ Java
 OOP Concepts
