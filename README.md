@@ -20,6 +20,8 @@ Experiment with new technologies
 Track my progress over time
 🛠️ Technologies Used
 <p align="left"> <img src="https://skillicons.dev/icons?i=java,c,html,css,git,github,vscode" /> </p>
+<br>
+<h2>Directory Structure</h2>
 <ul>
   <li>C</li>
   <li>Java</li>
