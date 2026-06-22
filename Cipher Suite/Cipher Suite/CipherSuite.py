@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 
-#----MY FILES
+#----Cryptography Algorithms
 from CRY import (
     Playfair as PF,
     CaesarCipher as CC,
